@@ -1,6 +1,6 @@
 {
   "name": "generator-react-starter-kit-component",
-  "version": "0.0.1",
+  "version": "0.1.1",
   "description": "A Yeoman generator for react components for the React Starter Kit",
   "homepage": "https://github.com/gfpacheco/generator-react-starter-kit-component",
   "author": {
