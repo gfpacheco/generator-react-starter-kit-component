@@ -10,7 +10,7 @@ npm install -g yo
 npm install -g generator-react-starter-kit-component
 ```
 
-Then generate your new project:
+Then generate your new component:
 
 ```bash
 yo react-starter-kit-component
