@@ -6,14 +6,18 @@ var helpers = require('yeoman-generator').test;
 describe('generator-react-starter-kit-component:app', function () {
   before(function (done) {
     helpers.run(path.join(__dirname, '../generators/app'))
-      .withOptions({someOption: true})
-      .withPrompts({someAnswer: true})
+      .withPrompts({
+        componentName: 'MyComponent',
+        componentStyleExtension: 'scss'
+      })
       .on('end', done);
   });
 
   it('creates files', function () {
     assert.file([
-      'dummyfile.txt'
+      'src/components/MyComponent/MyComponent.js',
+      'src/components/MyComponent/MyComponent.scss',
+      'src/components/MyComponent/package.json'
     ]);
   });
 });
