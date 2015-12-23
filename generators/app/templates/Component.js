@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import s from './<%= componentName %>.scss';
+<% if (componentStyleExtension !== 'none') { -%>
 import withStyles from '../withStyles';
+import s from './LoginPage.scss';
+<% } -%>
 
 class <%= componentName %> extends Component {
 
@@ -10,4 +12,8 @@ class <%= componentName %> extends Component {
 
 }
 
+<% if (componentStyleExtension !== 'none') { -%>
 export default withStyles(<%= componentName %>, s);
+<% } else { -%>
+export default <%= componentName %>;
+<% } -%>
