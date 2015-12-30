@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 <% if (componentStyleExtension !== 'none') { -%>
 import withStyles from '../withStyles';
-import s from './LoginPage.scss';
+import s from './<%= componentName %>.<%= componentStyleExtension %>';
 <% } -%>
 
 class <%= componentName %> extends Component {
